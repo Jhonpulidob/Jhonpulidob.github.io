@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí</title>
+    <!-- Enlace a Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        /* Clase para agregar margen superior a los contenedores debajo de la cabecera fija */
+        .margin-top-navbar {
+            margin-top: 100px; /* Ajusta esta altura según la altura de tu barra de navegación */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabecera con Navbar optimizada -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="home.html">
+                    <img src="images/logo.png" alt="Mi Portafolio" width="50" class="me-2">
+                    <span class="text-white fw-bold h5 mb-0">Jhon Edward Pulido Bustamante</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="home.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Bibliografía</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Portafolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Redes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    
+    <!-- Contenido Principal con margen superior para compensar la cabecera fija -->
+    <div class="container margin-top-navbar">
+        <p class="lead text-justify">Soy Jhon Edward Pulido Bustamante, un profesional con una visión multidisciplinaria y un enfoque apasionado por la innovación. Nacido el 5 de junio de 1978 en Caracas, mi carrera ha estado dedicada a la ingeniería, la gestión de proyectos y el desarrollo tecnológico, áreas en las que he adquirido un conocimiento profundo y una capacidad adaptativa que me permite abordar proyectos de gran envergadura con éxito. A lo largo de mi experiencia laboral en diversas industrias, he aprendido a integrar soluciones tecnológicas de manera eficiente y efectiva, destacándome por mi habilidad para liderar equipos, gestionar recursos y transformar ideas en realidades tangibles. Siempre busco la mejora continua y el aprendizaje, con el objetivo de contribuir al progreso y a la evolución de los sectores en los que participo.</p>
+
+        <h2 class="mt-5">Trayectoria Académica</h2>
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Ingeniero de Sistemas</strong> – I.U. Politécnico Santiago Mariño (2005).</li>
+            <li class="list-group-item"><strong>Magíster en Ciencias, Gerencia y Seguridad Industrial en Mantenimiento</strong> – Universidad Gran Mariscal de Ayacucho (UGMA) (2011).</li>
+            <li class="list-group-item"><strong>Magíster en Gerencia de Mercadeo</strong> – Universidad Gran Mariscal de Ayacucho (UGMA) (2017).</li>
+        </ul>
+
+        <h2 class="mt-5">Desempeño Profesional</h2>
+        <p class="text-justify">Mi experiencia abarca roles estratégicos y técnicos en sectores clave como:</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Energía y Petróleo</h5>
+                <p class="text-justify">Trabajé en PDVSA como Analista de Procura y posteriormente como Ingeniero de Proyectos, donde lideré la gestión de adquisición de equipos y materiales para proyectos de gran envergadura.</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Telecomunicaciones</h5>
+                <p class="text-justify">Participé en el proyecto de despliegue de fibra óptica para CANTV, en alianza con Huawei, cubriendo la ruta desde Caucagua hasta Barcelona.</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Banca y Finanzas</h5>
+                <p class="text-justify">Durante mi carrera en el Banco Mercantil, escalé posiciones desde Cajero hasta Gerente Operativo, gestionando operaciones clave y equipos de alto rendimiento.</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Distribución y Logística</h5>
+                <p class="text-justify">Como Gerente Regional en PDVAL, lideré la logística y distribución de alimentos en una región estratégica, garantizando el abastecimiento y la eficiencia operativa.</p>
+            </div>
+        </div>
+
+        <h2 class="mt-5">Iniciativas y Proyectos Autónomos</h2>
+        <p class="text-justify">Como emprendedor, he desarrollado múltiples negocios, entre ellos:</p>
+        <ul class="list-group mb-4">
+            <li class="list-group-item">Diseño y confección en serigrafía textil.</li>
+            <li class="list-group-item">Un salón de barbería.</li>
+            <li class="list-group-item">Un estudio de tatuajes, donde he destacado por ofrecer una experiencia única al cliente.</li>
+        </ul>
+
+        <p class="text-justify">Actualmente, me desempeño como freelancer en Chile, especializándome en:</p>
+        <ul class="list-group mb-4">
+            <li class="list-group-item"><strong>Desarrollo web y aplicaciones:</strong> Uso tecnologías como Python, Flask, HTML, CSS y JavaScript.</li>
+            <li class="list-group-item"><strong>Diseño digital y arte:</strong> Creación de ilustraciones, tatuajes personalizados y contenido visual de alta calidad.</li>
+            <li class="list-group-item"><strong>Escritura y creación de contenido:</strong> Estoy desarrollando seis libros, incluidos textos técnicos y novelas con títulos provisionales como <em>Del acero al cristal</em> y <em>Oruboru</em>.</li>
+        </ul>
+
+        <h2 class="mt-5">Perspectiva Personal</h2>
+        <p class="text-justify mb-4">Mi enfoque profesional se basa en la innovación continua y la búsqueda de soluciones estratégicas para los desafíos más complejos. Estoy comprometido con el desarrollo personal y profesional, combinando mi formación técnica, creatividad y experiencia en la gestión de recursos.</p>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 fixed-footer">
+        <p>© 2024 - 2025 Jhon Edward Pulido Bustamante - Todos los derechos reservados</p>
+    </footer>
+    
+    
+    
+
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

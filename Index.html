@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentacion</title>
+    <!-- Enlace a Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="intro">
+        <!-- Logo con animación -->
+        <img src="./images/logo.png" alt="Logo de bienvenida">
+        <!-- Texto animado que dará la bienvenida -->
+        <h1>Bienvenido a mi portafolio</h1>
+    </div>
+
+    
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                // Desvanecemos el contenido antes de redirigir
+                $('#intro').fadeOut(500, function () {
+                    window.location.href = "home.html";  // Redirige a home.html después del desvanecimiento
+                });
+            }, 2000); // Espera 2 segundos para que se vea el contenido antes de desvanecer
+        });
+    </script>
+</body>
+</html>

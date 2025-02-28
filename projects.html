@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <!-- Enlace a Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Estilo para agregar un margen superior al contenedor principal -->
+    <style>
+        .margin-top-navbar {
+            margin-top: 100px; /* Ajusta el valor según la altura de tu barra de navegación */
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera con Navbar optimizada -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="home.html">
+                    <img src="images/logo.png" alt="Mi Portafolio" width="50" class="me-2">
+                    <span class="text-white fw-bold h5 mb-0">Jhon Edward Pulido Bustamante</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="home.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Bibliografía</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Portafolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Redes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenedor principal con margen superior para evitar que se oculte el contenido debajo de la barra de navegación fija -->
+    <div class="container margin-top-navbar">
+        <h1 class="text-center">Mis Proyectos</h1>
+        <p class="card-text text-justify">
+            Cada uno de mis proyectos refleja mi pasión por la innovación y el deseo de crear experiencias únicas. A través de diversas disciplinas, desde el desarrollo de aplicaciones hasta la escritura, busco explorar nuevas formas de conectar con las personas y transformar ideas en realidades.
+        </p>
+
+        <div class="d-flex justify-content-center w-100">
+            <div class="d-flex justify-content-center col-md-6">
+                <h2 class="mt-5">Aplicaciones Publicadas</h2>
+            </div>
+        </div>
+        
+        <div class="row g-4 mt-3 justify-content-center">
+            <!-- Aplicación JPartInk -->
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="card shadow-sm">
+                    <a href="https://play.google.com/store/apps/details?id=appinventor.ai_jhonpulidob.Arttatoo" target="_blank">
+                        <img src="images/jpartink.png" class="card-img-top" alt="JPartInk">
+                    </a>
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title">Art Tattoo</h5>
+                        <p class="card-text text-justify">Primera versión, desarrollada con MIT App Inventor, que estima el costo de un tatuaje en dólares basado en las dimensiones y datos proporcionados por el usuario. Los precios son aproximados y pueden variar según la técnica, la reputación del artista y otros factores adicionales. Ideal para obtener una referencia inicial antes de consultar a un tatuador.</p>
+                        <a href="https://play.google.com/store/apps/details?id=appinventor.ai_jhonpulidob.Arttatoo" class="btn" target="_blank">
+                            <div class="border p-3 d-flex align-items-center">
+                                <img src="images/jp64x64.png" alt="jp64x64" class="me-3">
+                                <span>ArtTattoo</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="d-flex justify-content-center w-100 mt-5">
+                <div class="d-flex justify-content-center col-md-6">
+                    <h2 class="mt-5">Desarrollo de Games</h2>
+                </div>
+            </div>
+        
+            <!-- Desarrollo de Games -->
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="card shadow-sm">
+                    <img src="images/Energex.gif" class="card-img-top" alt="Energex">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title">Juego "Energex"</h5>
+                        <p class="card-text text-justify">"Energex" es un proyecto independiente que se encuentra actualmente en su fase de creación. Este juego, que combina acción y estrategia, está diseñado para ofrecer una experiencia inmersiva tanto en PC como en otras plataformas. El objetivo es proporcionar a los jugadores desafíos emocionantes, mecánicas de juego innovadoras y una historia.</p>
+                        <a href="https://play.google.com/store/apps/details?id=appinventor.ai_jhonpulidob.Arttatoo" class="btn" target="_blank">
+                            <div class="border p-3 d-flex align-items-center">
+                                <img src="images/icon.png" alt="jp64x64" class="me-3">
+                                <span>E N E R G E X</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <h2 class="mt-5">Libros en Desarrollo</h2>
+        </div>
+        <div class="row g-4 mt-3">
+            <script>
+                function openImage(url) {
+                    window.open(url, '_blank');
+                }
+            </script>
+
+<!-- Libro 1 -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <img src="images/El_Arca.jpg" class="card-img-top" alt="El Arca" onclick="openImage('images/El_Arca.jpg')">
+                    <div class="card-body">
+                        <h5 class="card-title"><p>"El Arca"</p>
+                            Ficción | Suspenso | Misterio 
+                            <p></p>
+                        </h5>
+                        <p class="card-text" style="text-align: justify;">Una expedición al imponente pico El Kaçkar se convierte en una lucha por la supervivencia cuando un grupo de especialistas en turismo y aventuras descubre una estructura desconocida y una criatura que desafía las leyes de la ciencia. Atrapados en un entorno cada vez más hostil, deberán enfrentar lo inexplicable mientras desentrañan los secretos ocultos en las profundidades de la montaña. Una historia de tensión, descubrimiento y confrontación con lo desconocido que cambiará su percepción de la realidad para siempre.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Libro 2 -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <img src="images/Del_Acero_Al_Vidrio.jpg" class="card-img-top" alt="El Cambio del Acero al Vidrio" onclick="openImage('images/Del_Acero_Al_Vidrio.jpg')">
+                    <div class="card-body">
+                        <h5 class="card-title"><p>"El Cambio del Acero al Vidrio"</p>
+                            Evolución Emocional | Reflexión Crítica
+                            <p></p>
+                        </h5>
+                        <p class="card-text" style="text-align: justify;">Un libro técnico y educativo que explora la transformación de la fortaleza emocional y su impacto en la identidad. A través de una profunda analogía, compara la resistencia del acero con la fragilidad del vidrio, analizando cómo la aceptación pasiva ha reemplazado la firmeza e integridad. Una obra que invita a la reflexión sobre la evolución emocional, el crecimiento personal y la necesidad de recuperar la esencia de quienes somos en un mundo que exige adaptación constante sin perder nuestra autenticidad ni nuestra capacidad de resistencia ante la adversidad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Libro 3 -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <img src="images/La_Foto.jpg" class="card-img-top" alt="La Foto" onclick="openImage('images/La_Foto.jpg')">
+                    <div class="card-body">
+                        <h5 class="card-title"><p>"La Foto"</p>
+                            Crimen | Intriga | Conspiración
+                            <p></p>
+                        </h5>
+                        <p class="card-text" style="text-align: justify;">Un fotógrafo en apuros decide participar en el World Nature Photography, con la esperanza de ganar el premio de un millón de dólares. Se adentra en el Parque Nacional Olympic (Washington), buscando capturar la foto perfecta. Sin embargo, lo que comienza como una simple competencia se convierte en un descubrimiento mortal: una oscura conspiración de alto nivel. Al intentar escapar con la evidencia, se ve envuelto en una persecución mortal, debe decidir a quién confiar la información y cómo hacer justicia, mientras enfrenta los oscuros secretos que se esconden tras la foto perfecta.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Libro 4 -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <img src="images/Gerencia_de_la_Vida.jpg" class="card-img-top" alt="La Gerencia de Vivencias" onclick="openImage('images/Gerencia_de_la_Vida.jpg')">
+                    <div class="card-body">
+                        <h5 class="card-title"><p>"Gerencia de la Vida"</p>
+                            Desarrollo Personal | Liderazgo | Estrategia
+                            <p></p>
+                        </h5>
+                        <p class="card-text" style="text-align: justify;">Cada decisión influye en nuestro futuro. La vida, como una empresa, requiere planificación y estrategia para el éxito. Este libro te enseña a aplicar principios de liderazgo y gerencia en el día a día, convirtiendo desafíos en oportunidades. Mediante experiencias reales y consejos prácticos, aprenderás a tomar el control de tu vida, fortalecer tu liderazgo y avanzar con determinación. No es solo gestionar el tiempo, sino desarrollar una visión estratégica para lograr tus metas.</p><P>¿Estás listo para convertirte en el gerente de tu propia vida?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Libro 5 -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <img src="images/La_Llegada.jpg" class="card-img-top" alt="La Llegada" onclick="openImage('images/La_Llegada.jpg')">
+                    <div class="card-body">
+                        <h5 class="card-title"><p>"La Llegada"</p>
+                            Ficción | Intriga | Misterio
+                            <p></p>
+                        </h5>
+                        <p class="card-text" style="text-align: justify;">Un meteorito desciende a la Tierra, pero su naturaleza desafía toda lógica. Al quedar suspendido a centímetros del suelo, un equipo de científicos y exploradores intenta descifrar su origen y propósito. La tensión crece mientras la humanidad observa, atrapada entre la curiosidad y el miedo. Cuando finalmente logran ingresar, lo que encuentran en su interior cambia para siempre la percepción de la historia. Secretos ocultos, teorías conspirativas y revelaciones impensadas salen a la luz, desafiando la verdad conocida y llevando a los protagonistas a cuestionar el verdadero origen de la civilización. Un relato de suspenso e intriga que explora los límites de lo desconocido y el impacto de una revelación que podría redefinir el destino de la humanidad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Libro 6 -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <img src="images/Uroboro.jpg" class="card-img-top" alt="Uroboros" onclick="openImage('images/Uroboro.jpg')">
+                    <div class="card-body">
+                        <h5 class="card-title"><p>"Uróboros"</p>
+                            Crimen | Conspiración | Venganza
+                            <p></p>
+                        </h5>
+                        <p class="card-text" style="text-align: justify;">En las sombras del mundo, una organización secreta entrena a huérfanos para convertirlos en letales centinelas, piezas clave en su misión de derrumbar las estructuras de la sociedad. Solo los más fuertes sobreviven, alcanzando el título de Uróboro, el eslabón final en una cadena sin fin. Sin embargo, uno de ellos rompe las reglas: se enamora y tiene un hijo. Su traición desata una cacería implacable que lo lleva al límite. Su hijo, testigo de la tragedia, es tomado por su padrino, quien lo guiará en un camino de venganza y redención. Un thriller implacable donde el destino parece repetirse, una y otra vez. </p><P>"El destino es un ciclo inquebrantable… hasta que alguien se atreve a romperlo."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="bg-dark text-white text-center py-3 fixed-footer">
+        <p>© 2024 - 2025 Jhon Edward Pulido Bustamante - Todos los derechos reservados</p>
+    </footer>
+    
+    
+    <!-- Enlace a Bootstrap JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
